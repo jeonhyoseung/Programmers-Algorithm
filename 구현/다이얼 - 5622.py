@@ -1,10 +1,8 @@
-alphabet = input().lower()
-dial = ["abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"]
-time = 0
-
-for i in range(len(alphabet)):
-    for j in dial:
-        if alphabet[i] in j:
-            time += dial.index(j) + 3
-
-print(time)
+dial = ['ABC', 'DEF', 'GHI', 'JKL', 'MNO', 'PQRS', 'TUV', 'WXYZ']
+a = input()
+ret = 0
+for j in range(len(a)):
+    for i in dial:
+        if a[j] in i:
+            ret += dial.index(i)+3
+print(ret)
