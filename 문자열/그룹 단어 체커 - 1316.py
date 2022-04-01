@@ -5,10 +5,11 @@ N = int(input())
 for _ in range(N):
     word = input().rstrip()
 
-    for i in range(len(word)-1) :
+    for i in range(len(word)-1):
         if word[i] != word[i+1]:
-            if word[i] in word[i+1:]:
-                N-=1
+            if word[i] in word[i+1:] :
+                 N -= 1
+                 break 
 
 print(N)
 
