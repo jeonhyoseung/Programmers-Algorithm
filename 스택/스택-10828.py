@@ -7,7 +7,7 @@ for _ in range(N):
 
     if b =="push":
         c = a[1]
-        stack.append(b) 
+        stack.append(c) 
     
     elif b=="pop":
         if len(stack)==0:
@@ -18,17 +18,18 @@ for _ in range(N):
     elif b=="size": 
         print(len(stack))
 
-    elif erder == "empty":
+    elif b == "empty":
         if len(stack)==0:
             print(1)
         else:
             print(0)
     
-    elif order =="top":
+    elif b =="top":
         if len(stack)==0:
             print(-1)
         else:
             print(stack[-1])
+
 
 
 
