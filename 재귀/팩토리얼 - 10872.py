@@ -5,4 +5,4 @@ def factorial(num):
 
 n=int(input())
 print(factorial(n))
- 
+
